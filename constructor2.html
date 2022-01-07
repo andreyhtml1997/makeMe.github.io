@@ -11,6 +11,13 @@
 </head>
 <body>
   <div class="page-wrapper">
+    <div class="preloader">
+      <div class="preloader__bubbles"></div>
+      <img src="img/icons/logoBig.svg" alt="#" class="preloader__logo">
+    </div>
+    
+    
+    
     <header class="page-header">
       <div class="container">
         <nav class="page-header__toggle menuMobileToggle--js">
@@ -1657,8 +1664,16 @@
             </div>
             <p class="text--grey">*от 1 до 15 знаков</p>
           </div>
-          <button class="button button--primary button--small w-100" data-dismiss="modal" disabled>Создать</button>
+          <button class="button button--primary button--small w-100 delayedLinkToBasket" data-dismiss="modal" disabled data-toggle="modal" data-target="#animateBottle">Создать</button>
         </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade animateBottle" id="animateBottle">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="img/constructor/bottleActive.png" class="animateBottle__img" alt="#">
+        
       </div>
     </div>
   </div>
